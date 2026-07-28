@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register - NRIIT Learning Management</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
-    <header>
-        <body>
-            <main>
-                <label>Email</label><br>
-                <input type="email" placeholder="Enter your email"><br>
-                <label>Gender</label><br>
-                        </main>
-                        <input type="radio" name="gender">Male
-                        <input type="radio" name="gender">Female
-        </body>
-        <h1>Register NRIIT Learning Management</h1>
-        <p>Learn Practice and get placed</p>
+
+<header>
+    <h1>NRIIT Learning Management System</h1>
+    <p>Learn, Practice and Get Placed</p>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -27,6 +23,134 @@
         <a href="login.html">Login</a>
         <a href="trainers.html">Trainers</a>
     </nav>
-    </header>
+</header>
+
+
+<main>
+
+    <h2>Create Your Account</h2>
+
+    <form action="#" method="post">
+
+        <label for="fullname">Full Name</label>
+        <input 
+            type="text" 
+            id="fullname" 
+            name="fullname"
+            placeholder="Enter your full name"
+            required>
+
+
+        <label for="email">Email Address</label>
+        <input 
+            type="email" 
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required>
+
+
+        <label for="phone">Phone Number</label>
+        <input 
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+            pattern="[0-9]{10}"
+            required>
+
+
+        <label>Gender</label>
+
+        <input type="radio" 
+               id="male" 
+               name="gender" 
+               value="Male">
+
+        <label for="male">Male</label>
+
+
+        <input type="radio" 
+               id="female" 
+               name="gender" 
+               value="Female">
+
+        <label for="female">Female</label>
+
+
+        <label for="dob">Date of Birth</label>
+        <input 
+            type="date"
+            id="dob"
+            name="dob">
+
+
+        <label for="course">Choose Course</label>
+
+        <select id="course" name="course" required>
+
+            <option value="">-- Select Course --</option>
+            <option>Python Full Stack</option>
+            <option>Java Full Stack</option>
+            <option>Data Science</option>
+            <option>AWS & DevOps</option>
+
+        </select>
+
+
+        <label for="mode">Training Mode</label>
+
+        <select id="mode" name="mode">
+
+            <option>Offline</option>
+            <option>Online</option>
+            <option>Hybrid</option>
+
+        </select>
+
+
+        <label for="address">Address</label>
+
+        <textarea 
+            id="address"
+            name="address"
+            rows="4"
+            placeholder="Enter your address"></textarea>
+
+
+        <label for="password">Create Password</label>
+
+        <input 
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+            minlength="6"
+            required>
+
+
+        <label>
+            <input type="checkbox" required>
+            I agree to the terms and conditions
+        </label>
+
+
+        <br><br>
+
+        <input type="submit" value="Register">
+
+        <input type="reset" value="Clear">
+
+
+    </form>
+
+</main>
+
+
+<footer>
+    <p>© 2026 NRIIT Learning Management System | All Rights Reserved</p>
+</footer>
+
+
 </body>
 </html>

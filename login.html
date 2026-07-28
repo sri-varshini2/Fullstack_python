@@ -3,21 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NRIIT Login</title>
 </head>
 <body>
+
     <header>
-        <h1>Login NRIIT Learning Management</h1>
-        <p>Learn Practice and get placed</p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="courses.html">Courses</a>
-        <a href="register.html">Register</a>
-        <a href="contact.html">Contact</a>
-        <a href="login.html">Login</a>
-        <a href="trainers.html">Trainers</a>
-    </nav>
+        <h1>Login - NRIIT Learning Management</h1>
+        <p>Learn, Practice and Get Placed</p>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="courses.html">Courses</a> |
+            <a href="register.html">Register</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="login.html">Login</a> |
+            <a href="trainers.html">Trainers</a>
+        </nav>
+
+        <hr>
     </header>
+
+    <main>
+        <h2>Login Form</h2>
+
+        <form action="#" method="post">
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember Me</label>
+            <br><br>
+
+            <input type="submit" value="Login">
+            <input type="reset" value="Clear">
+
+        </form>
+
+        <p>
+            Don't have an account?
+            <a href="register.html">Register Here</a>
+        </p>
+    </main>
+
 </body>
 </html>

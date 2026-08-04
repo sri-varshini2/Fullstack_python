@@ -33,7 +33,20 @@ function greetStudent(name){
     console.log("Hello"+name+",welcome to NRIIT Learning Management System")
 }
 greetStudent(student_name)
-alert("welcome to NRIIT Learning Management System")
+console.log("welcome to NRIIT Learning Management System");
 let heading=document.getElementById("welcome");
-heading=innerHTML="welcome Future software Engineers"
-console.log("Heading elements:",heading)
+if (heading) {
+    heading.innerHTML = "welcome Future software Engineers";
+}
+console.log("Heading element:", heading)
+
+function squareNumber(num){
+    return num*num;
+}
+let x = squareNumber(5);
+console.log("Square of 5 is:", x)
+
+
+
+
+

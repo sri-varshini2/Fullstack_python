@@ -10,15 +10,22 @@
     <header>
         <h1>Login - NRIIT Learning Management</h1>
         <p>Learn, Practice and Get Placed</p>
-
+        @app.route('/api/login', methods=['GET', 'POST'])
+        def login():
+            if request.method == 'POST':
+                
+                email = request.form['email']
+                password = request.form['password']
+                # Handle login logic here
+            return render_template('login.html')
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="courses.html">Courses</a> |
-            <a href="register.html">Register</a> |
-            <a href="contact.html">Contact</a> |
-            <a href="login.html">Login</a> |
-            <a href="trainers.html">Trainers</a>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/courses">Courses</a>
+            <a href="/register">Register</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login</a>
+            <a href="/trainers">Trainers</a>
         </nav>
 
         <hr>

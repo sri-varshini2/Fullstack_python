@@ -32,7 +32,13 @@ def register():
     return render_template('register.html')
 
 @app.route('/login')
-def login():
+def api_login():
+    data=request.get_json()
+    email=data.get('email') 
+    password=data.get('password')
+    user=users_db.get
+        
+        # Handle login logic here
     return render_template('login.html')   
 @app.route('/trainers') 
 def trainers():

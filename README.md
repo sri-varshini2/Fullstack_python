@@ -8,3 +8,14 @@ python -m venv venv
 pip install flask
 pip freeze>requirements.txt
 pip install -r requirements.txt
+
+lsof -i: 5000
+kill -9.
+
+
+app should contain
+login
+register
+crud apis
+database connections
+fronted backend 
